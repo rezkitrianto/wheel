@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html ng-app="myApp" class="ng-scope"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+		<!-- base href="https://wixlabs-countdown.appspot.com/" -->
+		<title>Countdown clock - 25 days , 21 hours , 58 minutes remaining</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="icon" href="https://wixlabs-countdown.appspot.com/assets/images/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="index_data_002/fontFace.css">
+		<link type="text/css" rel="stylesheet" href="index_data/css.css" id="wix-google-fonts">
+		<link type="text/css" rel="stylesheet" href="index_data/languages.css">
+
+		<link rel="stylesheet" href="index_data/index.css">
+
+		<script src="index_data/wix-private.js"></script>
+		<script type="text/javascript">
+			var initialState = {"DEFAULT_LANGUAGE":"en","appName":"myApp","origin":"app_settings","widget_origin":"widget","APP_ID":"12e0dab3-a3cf-d446-2251-450722a9f464","design":{"counter_design":{"digits":{"textFont":{"name":"DigitsFont","value":"Body-M","theme":"font_8","maxSize":8},"textColor":{"name":"DigitsColor","value":"color-1"}},"background":{"value":"color-5","name":"counterBackgroundColor","opacity":"1"},"border":{"value":"color-8","name":"BorderColor"}},"counter_message":{"font":{"textFont":{"name":"ListTitleFont","value":"Body-M","theme":"font_7","startWithSize":40,"maxSize":60},"textColor":{"name":"ListTitleColor","value":"color-1"}},"background":{"value":"color-5","name":"listBackgroundColor","opacity":"1"},"border":{"value":"color-8","name":"listBorderColor","opacity":"0.2"}}},"data":{"settings":{"show_minutes":1,"display_days":1,"count_direction":1,"labels_bg":false,"isOldApp":0,"label_minutes":"widget.minutes.label","editor_lang":"en","display_seconds":1,"end_time":"00:00:46 GMT+0000 (UTC)","end_date":10,"on_complete":"stop","countdown_tz":"Asia/Singapore","on_complete_text":"widget.oncomplete.text","style":1,"show_hours":1,"label_seconds":"widget.secs.label","count_to":0,"countdown_at":"2019-06-17T18:00:46.319Z","label_hours":"widget.hours.label","lang":"en","label_days":"widget.days.label","border_width":1,"oldSettings":{"bgcolor":"","font":"","opacity":1,"textcolor":"","bordercolor":""}},"first":false}};
+			initialState.locationParams = document.location.search;
+		</script>
+        
+
+<style wix-style="" type="text/css" ng-non-bindable="">
+    .timer .wrapper,
+    .timer .text,
+    .timer ul.flip li .front-and-back div div.inn {
+        color: #FFFFFF !important;
+        color:  !important;
+        color: rgba(255,255,255,1) !important;
+    }
+    .timer .wrapper {
+    font:normal normal normal 16px/1.4em lato-light,lato,sans-serif; ;
+        font-family: ;
+        font:normal normal normal 16px/20px wfont_397bed_1713cc30834d41cdb8fd83a8080275aa,wf_1713cc30834d41cdb8fd83a80,orig_sanomat_sans_medium;;
+
+    }
+    .timer.timer-style-1 .wrapper{
+        font-size:1px !important;
+    }
+    .timer-style-2 .shadow{
+        display: none;
+    }
+    .timer-style-1 .wrapper {
+        border: none;
+    }
+    .timer-style-2.timer .wrapper {
+        border-width:1px;
+        border-style:solid;
+        background: #1D1E21;
+        background: ;
+        background: rgba(0,177,79,1);
+        border-color: #069AA1 ;
+        border-color:  ;
+        border-color: rgba(6,154,161,1) ;
+    }
+/*
+    .timer-style-2.timer.complete .complete-text {
+        border-style: solid;
+        border-color: #1D1E21;
+        border-color: ;
+        border-color: style.listBackgroundColor;
+    }
+    */
+
+    .timer.timer-style-1 .value, .timer.timer-style-1 ul.flip li .front-and-back div div.inn, .timer.timer-style-1 .text,
+    .timer.timer-style-1 ul.flip li .front-and-back div.up:after {
+        background: #1D1E21 !important;
+        background:  !important;
+        background: rgba(0,177,79,1) !important;
+    }
+
+    .timer.timer-style-1.invert .text {
+        background:transparent !important;
+        color: #1D1E21 !important;
+        color:  !important;
+        color: rgba(0,177,79,1) !important;
+    }
+    .timer-style-2.timer ul.flip li .front-and-back div div.inn{
+        text-shadow: none !important;
+    }
+    .timer-style-2.timer ul.flip li .front-and-back div.up:after {
+        visibility: hidden;
+    }
+    .timer.complete .wrapper,
+    .timer.complete.timer-style-1 .wrapper{
+        /*
+        background: #1D1E21 !important;
+        background:  !important;
+        background: style.listBackgroundColor !important;
+        */
+        background: #1D1E21 !important;
+        background:  !important;
+        background: style.listBackgroundColor !important;
+    }
+    .timer.complete.timer-style-1 .wrapper {
+        border-radius: 10px;
+    }
+    .timer .complete-text {
+        font-size: 40px;
+        Body-M;
+        font-family: ;
+        style.ListTitleFont
+
+        color: #FFFFFF ;
+        color: ;
+        color: style.ListTitleColor;
+/*
+        background: #1D1E21;
+        background: ;
+        background: style.listBackgroundColor;
+        */
+        background: transparent !important;
+    }
+    .timer.timer-style-2 .text{
+        background: transparent;
+    }
+</style>
+	<style wix-style="">.Title{ font:normal normal bold 51px/1.4em montserrat,sans-serif; } .Menu{ font:normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } .Page-title{ font:normal normal bold 32px/1.4em montserrat,sans-serif; } .Heading-XL{ font:normal normal bold 176px/1.4em oswald-medium,oswald,sans-serif; } .Heading-L{ font:normal normal bold 18px/1.4em lato-light,lato,sans-serif; } .Heading-M{ font:normal normal normal 51px/1.4em montserrat,sans-serif; } .Heading-S{ font:normal normal normal 24px/1.4em montserrat,sans-serif; } .Body-L{ font:normal normal bold 19px/1.4em montserrat,sans-serif; } .Body-M{ font:normal normal normal 16px/1.4em lato-light,lato,sans-serif; } .Body-S{ font:normal normal bold 14px/1.4em lato-light,lato,sans-serif; } .Body-XS{ font:normal normal normal 12px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif; } }</style><style>:focus { box-shadow: inset 0 0 0 1px rgba(255,255,255,0.9), 0 0 1px 2px #3899EC; }</style><link type="text/css" rel="stylesheet" href="index_data_002/css.css" id="wix-google-fonts"><style type="text/css">@font-face {
+font-family: wf_1713cc30834d41cdb8fd83a80;
+src: url("https://static.wixstatic.com/ufonts/397bed_1713cc30834d41cdb8fd83a8080275aa/woff/file.woff") format("woff"),
+url("https://static.wixstatic.com/ufonts/397bed_1713cc30834d41cdb8fd83a8080275aa/woff2/file.woff2") format("woff2"),
+url("https://static.wixstatic.com/ufonts/397bed_1713cc30834d41cdb8fd83a8080275aa/ttf/file.ttf") format("ttf");
+}
+</style><link type="text/css" rel="stylesheet" href="languages.css"><style type="text/css" id="myStyleInjectundefined"></style></head>
+	<body role="application" ng-attr-aria-label="{{$root.timerText}}" aria-label="Countdown clock - 25 days , 21 hours , 58 minutes remaining" class="play">
+	    <!-- ngView: --><div ng-view="" class="my-app ng-scope" role="main" aria-label="hidden"><section class="main ng-scope" ng-controller="HomeController as $ctrl" ng-class="{'ipadfix':$ctrl.isIpad()}">
+    <div class="timer timer-style-1 invert" ng-class="['timer-style-'+$ctrl.settings.style, {'complete':$ctrl.is_complete,'no-days':($ctrl.settings.display_days==0)},
+         {'invert':!$ctrl.settings.labels_bg}]" ng-attr-data-style="{{$ctrl.settings.style}}" data-complete="stop" ng-attr-data-border-width="{{$ctrl.settings.border_width}}" data-style="1" data-border-width="0" style="opacity: 1;">
+        <div class="wrapper" ng-style="{'border-width':($ctrl.settings.border_width+'px')}" aria-hidden="true" style="width: 495px; height: 156px; background: transparent none repeat scroll 0% 0%; border-width: 0px;">
+            <div class="complete-text" ng-class1="{'has-border':($ctrl.settings.border_width&lt;5)}" style="width: 97%; height: 97%;">
+                <div>
+                    <div ng-bind="$ctrl.getTranslateByKey($ctrl.settings.on_complete_text)" class="ng-binding">Countdown over!</div>
+                </div>
+            </div>
+            <div class="days len2" ng-show="($ctrl.settings.display_days==1)" ng-class="[{'three':$ctrl.daysFormatted.length&gt;2},'len'+$ctrl.daysFormatted.length]">
+                <ul class="value flip days-play" style="height: 104px; font-size: 65px; line-height: 104px; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%;">
+                    <li>
+                        <div class="front-and-back" style="perspective: 247.5px;">
+                            <div class="up" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;">
+                                <div class="shadow" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">25</div>
+                            </div>
+                            <div class="down" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;">
+                                <div class="shadow" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">25</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="front-and-back" style="perspective: 247.5px;">
+                            <div class="up" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;">
+                                <div class="shadow" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">25</div>
+                            </div>
+                            <div class="down" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;">
+                                <div class="shadow" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">25</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text ng-binding" ng-bind="$ctrl.getTranslateByKey($ctrl.settings.label_days)" style="height: 33.8px; line-height: 33.8px; font-size: 26px; margin-top: 18.2px; background: rgb(0, 177, 79) none repeat scroll 0% 0%;">Days</div>
+            </div>
+            <div class="separator" ng-show="($ctrl.settings.display_days==1)" style="width: 8%;">
+                <div class="space" style="height: 104px; font-size: 65px; line-height: 104px;">:</div>
+                <div class="text" style="height: 33.8px; line-height: 33.8px; font-size: 26px; margin-top: 18.2px; background: rgb(0, 177, 79) none repeat scroll 0% 0%;">&nbsp;</div>
+            </div>
+            <div class="hours">
+                <ul class="value flip hours-play" style="height: 104px; font-size: 65px; line-height: 104px; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%;">
+                    <li class="before">
+                        <div class="front-and-back" style="perspective: 247.5px;">
+                            <div class="up" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;">
+                                <div class="shadow" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">22</div>
+                            </div>
+                            <div class="down" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;">
+                                <div class="shadow" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">22</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="active">
+                        <div class="front-and-back" style="perspective: 247.5px;">
+                            <div class="up" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;">
+                                <div class="shadow" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">21</div>
+                            </div>
+                            <div class="down" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;">
+                                <div class="shadow" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">21</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text ng-binding" ng-bind="$ctrl.getTranslateByKey($ctrl.settings.label_hours)" style="height: 33.8px; line-height: 33.8px; font-size: 26px; margin-top: 18.2px; background: rgb(0, 177, 79) none repeat scroll 0% 0%;">Hours</div>
+            </div>
+            <div class="separator" style="width: 8%;">
+                <div class="space" style="height: 104px; font-size: 65px; line-height: 104px;">:</div>
+                <div class="text" style="height: 33.8px; line-height: 33.8px; font-size: 26px; margin-top: 18.2px; background: rgb(0, 177, 79) none repeat scroll 0% 0%;">&nbsp;</div>
+            </div>
+            <div class="mins">
+                <ul class="value flip mins-play" style="height: 104px; font-size: 65px; line-height: 104px; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%;">
+                    <li class="before">
+                        <div class="front-and-back" style="perspective: 247.5px;">
+                            <div class="up" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;">
+                                <div class="shadow" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">59</div>
+                            </div>
+                            <div class="down" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;">
+                                <div class="shadow" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">59</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="active">
+                        <div class="front-and-back" style="perspective: 247.5px;">
+                            <div class="up" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;">
+                                <div class="shadow" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">58</div>
+                            </div>
+                            <div class="down" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;">
+                                <div class="shadow" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">58</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text ng-binding" ng-bind="$ctrl.getTranslateByKey($ctrl.settings.label_minutes)" style="height: 33.8px; line-height: 33.8px; font-size: 26px; margin-top: 18.2px; background: rgb(0, 177, 79) none repeat scroll 0% 0%;">Mins</div>
+            </div>
+            <div class="separator" ng-show="($ctrl.settings.display_seconds==1)" style="width: 8%;">
+                <div class="space" style="height: 104px; font-size: 65px; line-height: 104px;">:</div>
+                <div class="text" style="height: 33.8px; line-height: 33.8px; font-size: 26px; margin-top: 18.2px; background: rgb(0, 177, 79) none repeat scroll 0% 0%;">&nbsp;</div>
+            </div>
+            <div class="secs" ng-show="($ctrl.settings.display_seconds=='1')">
+                <ul class="value flip secs-play" style="height: 104px; font-size: 65px; line-height: 104px; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%;">
+                    <li class="active">
+                        <div class="front-and-back" style="perspective: 247.5px;">
+                            <div class="up" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;">
+                                <div class="shadow" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">10</div>
+                            </div>
+                            <div class="down" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;">
+                                <div class="shadow" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">10</div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="before">
+                        <div class="front-and-back" style="perspective: 247.5px;">
+                            <div class="up" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;">
+                                <div class="shadow" style="border-top-left-radius: 7.8px; border-top-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">11</div>
+                            </div>
+                            <div class="down" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;">
+                                <div class="shadow" style="border-bottom-left-radius: 7.8px; border-bottom-right-radius: 7.8px;"></div>
+                                <div class="inn" style="text-shadow: none; border-radius: 7.8px; background: rgb(0, 177, 79) none repeat scroll 0% 0%; height: 104px; font-size: 65px; line-height: 104px;">11</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="text ng-binding" ng-bind="$ctrl.getTranslateByKey($ctrl.settings.label_seconds)" style="height: 33.8px; line-height: 33.8px; font-size: 26px; margin-top: 18.2px; background: rgb(0, 177, 79) none repeat scroll 0% 0%;">Secs</div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+		<script src="index_data/bower-index.js"></script>
+		
+		<script src="index_data/scripts-index.js"></script>
+	
+
+</body></html>

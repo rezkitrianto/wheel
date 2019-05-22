@@ -1,0 +1,122 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head><body><center>
+    <table width="800" border="0">
+      <tbody><tr><td colspan="2"><center><h1>Cars Dataset</h1></center></td></tr>
+      <tr><td colspan="2"><img src="car_dataset_files/class_montage.jpg" height="140"></td></tr>
+      <tr><td colspan="2" height="40"></td></tr>
+      <tr><td colspan="2" width="50"><h2>Overview</h2></td></tr>
+      <tr>
+        <td width="800">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          The <em>Cars</em> dataset contains 16,185 images of 196 
+classes of cars. The data is split into 8,144 training images and 8,041 
+testing images, where each class has been split roughly in a 50-50 
+split. Classes are typically at the level of <em>Make, Model, Year</em>, e.g. 2012 Tesla Model S or 2012 BMW M3 coupe.
+        </td>
+      </tr>
+      <tr><td colspan="2" height="20"></td></tr>
+      <tr>
+        <td>
+          <table width="800" cellspacing="0" cellpadding="0">
+            <tbody><tr>
+              <td><img src="car_dataset_files/car1.jpg" width="200" height="140"></td>
+              <td><img src="car_dataset_files/car2.jpg" width="200" height="140"></td>
+              <td><img src="car_dataset_files/car3.jpg" width="200" height="140"></td>
+              <td><img src="car_dataset_files/car4.jpg" width="200" height="140"></td>
+            </tr>
+            <tr>
+              <td><img src="car_dataset_files/car5.jpg" width="200" height="140"></td>
+              <td><img src="car_dataset_files/car6.jpg" width="200" height="140"></td>
+              <td><img src="car_dataset_files/car7.jpg" width="200" height="140"></td>
+              <td><img src="car_dataset_files/car8.jpg" width="200" height="140"></td>
+            </tr>
+          </tbody></table>
+        </td>
+      </tr>
+      <tr><td colspan="2" height="40"></td></tr>
+      <tr><td colspan="2" width="50"><h2>Download</h2></td></tr>
+      <tr>
+        <td width="800">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Training images can be downloaded <a href="http://imagenet.stanford.edu/internal/car196/cars_train.tgz">here</a>.
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          Testing images can be downloaded <a href="http://imagenet.stanford.edu/internal/car196/cars_test.tgz">here</a>.
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          A devkit, including class labels for training images and bounding boxes for all images, can be downloaded <a href="https://ai.stanford.edu/~jkrause/cars/car_devkit.tgz">here</a>.
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          If you're interested in the BMW-10 dataset, you can get that <a href="http://imagenet.stanford.edu/internal/car196/bmw10_release.tgz">here</a>.
+          <br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <b>Update:</b> For ease of development, a tar of all images is available <a href="http://imagenet.stanford.edu/internal/car196/car_ims.tgz">here</a> and all bounding boxes and labels for both training and test are available <a href="http://imagenet.stanford.edu/internal/car196/cars_annos.mat">here</a>. If you were using the evaluation server before (which is still running), you can use test annotations <a href="http://imagenet.stanford.edu/internal/car196/cars_test_annos_withlabels.mat">here</a> to evaluate yourself without using the server.
+        </td>
+      </tr>
+      <tr><td colspan="2" height="40"></td></tr>
+      <tr><td colspan="2" width="50"><h2>Evaluation</h2></td></tr>
+      <tr>
+        <td width="800">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          An evaluation server has been set up <a href="http://imagenet.stanford.edu/internal/car196/submission/submission.php">here</a>. Instructions for the submission format are included in the devkit.  This dataset was featured as part of <a href="https://sites.google.com/site/fgcomp2013/">FGComp 2013</a>, and competition results are directly comparable to results obtained from evaluating on images here.
+        </td>
+      </tr>
+      <tr><td colspan="2" height="40"></td></tr>
+      <tr><td colspan="2" width="50"><h2>Citation</h2></td></tr>
+      <tr>
+        <td width="800">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          If you use this dataset, please cite the following paper:
+          <br>
+          <br>
+          <font size="-1">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <b>3D Object Representations for Fine-Grained Categorization</b><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Jonathan Krause, Michael Stark, Jia Deng, Li Fei-Fei<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i>4th IEEE Workshop on 3D Representation and Recognition, at ICCV 2013</i> <b>(3dRR-13)</b>. Sydney, Australia. Dec. 8, 2013.<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a style="text-decoration: underline" href="https://ai.stanford.edu/~jkrause/papers/3drr13.pdf">[pdf]</a>
+            &nbsp;&nbsp;<a style="text-decoration: underline" href="https://ai.stanford.edu/~jkrause/papers/3drr13.bib">[BibTex]</a>
+            &nbsp;&nbsp;<a style="text-decoration: underline" href="https://ai.stanford.edu/~jkrause/papers/3drr_talk.pdf">[slides]</a>
+          </font>
+          <br>
+          <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Note that the dataset, as 
+released, has 196 categories, one less than in the paper, as it has been
+ cleaned up slightly since publication. Numbers should be more or less 
+comparable, though.
+        </td>
+      </tr>
+      <tr><td colspan="2" height="40"></td></tr>
+      <tr><td colspan="2" width="50"><h2>Contact</h2></td></tr>
+      <tr>
+        <td width="800">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <style type="text/css">
+            span.reverse { unicode-bidi:bidi-override; direction: rtl; }
+          </style>
+          <span class="reverse">ude.drofnats.sc@esuarkj</span>
+        </td>
+      </tr>
+      <tr><td colspan="2" height="40"></td></tr>
+      <tr><td colspan="2"><img src="car_dataset_files/class_montage_flop.jpg" height="140"></td></tr>
+    </tbody></table>
+  </center>
+
+</body></html>
